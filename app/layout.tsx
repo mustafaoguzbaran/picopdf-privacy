@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://picopdf-privacy.mustafaoguzbaran.chatgpt.site"),
+  metadataBase: new URL("https://mustafaoguzbaran.github.io/picopdf-privacy/"),
   title: "PicoPDF Privacy Policy | Gizlilik Politikası",
   description:
     "How PicoPDF handles files, advertising data, consent choices, and on-device PDF processing.",
