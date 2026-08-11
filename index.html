@@ -1,0 +1,445 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#4e3b59" />
+    <meta
+      name="description"
+      content="How PicoPDF handles files, advertising data, consent choices, and on-device PDF processing."
+    />
+    <meta property="og:title" content="PicoPDF Privacy Policy" />
+    <meta property="og:description" content="Your files stay on your device." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://mustafaoguzbaran.github.io/picopdf-privacy/" />
+    <meta property="og:image" content="https://mustafaoguzbaran.github.io/picopdf-privacy/public/og.png" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="PicoPDF Privacy Policy" />
+    <meta name="twitter:description" content="Your files stay on your device." />
+    <meta name="twitter:image" content="https://mustafaoguzbaran.github.io/picopdf-privacy/public/og.png" />
+    <link rel="canonical" href="https://mustafaoguzbaran.github.io/picopdf-privacy/" />
+    <link rel="icon" href="public/favicon.png" />
+    <title>PicoPDF Privacy Policy | Gizlilik Politikası</title>
+    <style>:root {
+  --cream: #fbf4ea;
+  --paper: #fffdfa;
+  --ink: #261f29;
+  --muted: #716875;
+  --plum: #4e3b59;
+  --plum-deep: #392b42;
+  --apricot: #f0a366;
+  --mint: #dfece5;
+  --line: #e8dfe5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--cream);
+  color: var(--ink);
+  font-family: var(--font-geist-sans), system-ui, sans-serif;
+  line-height: 1.7;
+}
+
+a {
+  color: var(--plum);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+.hero {
+  background: var(--plum);
+  color: white;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero::after {
+  background: var(--apricot);
+  border-radius: 999px;
+  content: "";
+  height: 280px;
+  opacity: 0.95;
+  position: absolute;
+  right: -110px;
+  top: -160px;
+  width: 360px;
+}
+
+.topbar,
+.hero-copy,
+.policy,
+footer {
+  margin-inline: auto;
+  max-width: 1040px;
+  padding-inline: 28px;
+}
+
+.topbar {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding-block: 24px;
+  position: relative;
+  z-index: 1;
+}
+
+.brand {
+  align-items: center;
+  color: inherit;
+  display: inline-flex;
+  gap: 12px;
+  text-decoration: none;
+}
+
+.brand strong,
+.brand small {
+  display: block;
+}
+
+.brand strong {
+  font-size: 1.2rem;
+  line-height: 1.2;
+}
+
+.brand small {
+  color: #d8cedc;
+  font-size: 0.8rem;
+}
+
+.brand-mark {
+  background: var(--apricot);
+  border-radius: 13px;
+  height: 46px;
+  overflow: hidden;
+  position: relative;
+  width: 46px;
+}
+
+.brand-mark__fold {
+  border-color: transparent var(--plum-deep) transparent transparent;
+  border-style: solid;
+  border-width: 0 13px 13px 0;
+  height: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 0;
+}
+
+.brand-mark__line {
+  background: var(--plum-deep);
+  border-radius: 999px;
+  bottom: 12px;
+  height: 3px;
+  left: 11px;
+  position: absolute;
+  width: 24px;
+}
+
+.brand-mark__line--short {
+  bottom: 20px;
+  width: 16px;
+}
+
+.language-links {
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 999px;
+  display: flex;
+  gap: 4px;
+  padding: 4px;
+}
+
+.language-links a {
+  border-radius: 999px;
+  color: white;
+  font-size: 0.86rem;
+  font-weight: 650;
+  padding: 7px 13px;
+  text-decoration: none;
+}
+
+.language-links a:hover,
+.language-links a:focus-visible {
+  background: rgba(255, 255, 255, 0.14);
+}
+
+.hero-copy {
+  align-items: end;
+  display: grid;
+  gap: 48px;
+  grid-template-columns: minmax(0, 1.45fr) minmax(260px, 0.75fr);
+  padding-block: 88px 96px;
+  position: relative;
+  z-index: 1;
+}
+
+.eyebrow {
+  color: #f7bd8e;
+  display: block;
+  font-size: 0.78rem;
+  font-weight: 750;
+  letter-spacing: 0.14em;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: clamp(3.1rem, 8vw, 6rem);
+  letter-spacing: -0.06em;
+  line-height: 0.98;
+  margin: 0;
+}
+
+.hero-lead {
+  color: #e3dbe6;
+  font-size: clamp(1.05rem, 2.4vw, 1.32rem);
+  line-height: 1.55;
+  margin: 24px 0 0;
+  max-width: 660px;
+}
+
+.effective {
+  color: #baadbf;
+  font-size: 0.88rem;
+  margin: 18px 0 0;
+}
+
+.privacy-card {
+  background: var(--paper);
+  border-radius: 26px;
+  color: var(--ink);
+  padding: 28px;
+}
+
+.privacy-card .lock {
+  align-items: center;
+  background: var(--mint);
+  border-radius: 14px;
+  color: var(--plum);
+  display: flex;
+  height: 44px;
+  justify-content: center;
+  margin-bottom: 36px;
+  width: 44px;
+}
+
+.privacy-card strong {
+  display: block;
+  font-size: 1.12rem;
+}
+
+.privacy-card p {
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1.55;
+  margin: 7px 0 0;
+}
+
+.policy {
+  display: grid;
+  gap: 72px;
+  grid-template-columns: minmax(190px, 0.55fr) minmax(0, 1.45fr);
+  padding-block: 92px;
+  scroll-margin-top: 20px;
+}
+
+.policy--tr {
+  border-top: 1px solid var(--line);
+}
+
+.section-heading {
+  align-items: flex-start;
+  display: flex;
+  gap: 14px;
+}
+
+.section-heading > span {
+  align-items: center;
+  background: var(--apricot);
+  border-radius: 10px;
+  color: var(--plum-deep);
+  display: flex;
+  font-size: 0.72rem;
+  font-weight: 800;
+  height: 36px;
+  justify-content: center;
+  letter-spacing: 0.08em;
+  width: 36px;
+}
+
+.section-heading p {
+  color: var(--muted);
+  font-size: 0.8rem;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.section-heading h2 {
+  font-size: clamp(1.65rem, 3.2vw, 2.2rem);
+  letter-spacing: -0.04em;
+  line-height: 1.15;
+  margin: 4px 0 0;
+}
+
+article {
+  background: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 30px;
+  box-shadow: 0 22px 65px rgba(78, 59, 89, 0.07);
+  padding: clamp(28px, 6vw, 58px);
+}
+
+article h3 {
+  font-size: 1.08rem;
+  letter-spacing: -0.015em;
+  margin: 42px 0 9px;
+}
+
+article h3:first-child {
+  margin-top: 0;
+}
+
+article p,
+article li {
+  color: #5e5561;
+  font-size: 0.98rem;
+}
+
+article p {
+  margin: 0 0 15px;
+}
+
+article ul {
+  margin: 10px 0 20px;
+  padding-left: 22px;
+}
+
+article li {
+  margin-block: 7px;
+}
+
+article code {
+  background: #f2ecf3;
+  border-radius: 6px;
+  color: var(--plum-deep);
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 0.82em;
+  padding: 2px 6px;
+}
+
+.external {
+  display: inline-block;
+  font-size: 0.8em;
+  margin-left: 5px;
+  text-decoration: none;
+}
+
+footer {
+  align-items: center;
+  border-top: 1px solid var(--line);
+  display: flex;
+  justify-content: space-between;
+  padding-block: 34px 48px;
+}
+
+.brand--footer {
+  color: var(--ink);
+}
+
+.brand--footer small,
+footer p {
+  color: var(--muted);
+}
+
+footer p {
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+@media (max-width: 760px) {
+  .topbar,
+  .hero-copy,
+  .policy,
+  footer {
+    padding-inline: 20px;
+  }
+
+  .hero-copy,
+  .policy {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-copy {
+    gap: 36px;
+    padding-block: 64px 68px;
+  }
+
+  .policy {
+    gap: 28px;
+    padding-block: 64px;
+  }
+
+  .privacy-card .lock {
+    margin-bottom: 22px;
+  }
+
+  footer {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 22px;
+  }
+}
+
+@media (max-width: 440px) {
+  .brand small {
+    display: none;
+  }
+
+  .language-links a {
+    font-size: 0.78rem;
+    padding: 6px 9px;
+  }
+
+  article {
+    border-radius: 22px;
+    padding: 24px;
+  }
+}
+
+@media print {
+  .hero {
+    background: white;
+    color: black;
+  }
+
+  .language-links,
+  .privacy-card,
+  .hero::after {
+    display: none;
+  }
+
+  .hero-copy,
+  .policy {
+    display: block;
+    padding-block: 28px;
+  }
+
+  article {
+    border: 0;
+    box-shadow: none;
+    padding: 20px 0;
+  }
+}</style>
+  </head>
+  <body><main><header class="hero"><nav class="topbar" aria-label="Language navigation"><a class="brand" href="#top" aria-label="PicoPDF privacy policy home"><div class="brand-mark" aria-hidden="true"><span class="brand-mark__fold"></span><span class="brand-mark__line brand-mark__line--short"></span><span class="brand-mark__line"></span></div><span><strong>PicoPDF</strong><small>PDF Tools</small></span></a><div class="language-links"><a href="#english">English</a><a href="#turkce">Türkçe</a></div></nav><div class="hero-copy" id="top"><div><span class="eyebrow">Privacy first · Önce gizlilik</span><h1>Privacy Policy</h1><p class="hero-lead">PicoPDF processes your documents on your device. Your PDFs and photos are not uploaded to a PicoPDF developer server.</p><p class="effective">Effective date: August 11, 2026</p></div><aside class="privacy-card" aria-label="Privacy summary"><span class="lock" aria-hidden="true">●</span><strong>Your files stay on your device</strong><p>No account. No broad storage permission. No developer cloud.</p></aside></div></header><section class="policy" id="english" lang="en"><div class="section-heading"><span>EN</span><div><p>English</p><h2>PicoPDF Privacy Policy</h2></div></div><article><h3>1. Scope</h3><p>This Privacy Policy explains how the PicoPDF Android application (<code>com.mustafaoguzbaran.picopdf</code>) handles information when you compress, merge, split, organize, scan, or create PDF files.</p><h3>2. Your documents and photos</h3><p>Files you choose are processed locally on your device. PicoPDF does not upload document contents, photos, filenames, or finished PDFs to a server operated by the developer. The app uses Android&#x27;s system file picker, so access is limited to files you select. Outputs are saved only to the location you choose.</p><p>PicoPDF may keep a small, device-local list of recent results for convenience. This list can be cleared inside the app. Removing an item from the recent list does not automatically delete a PDF saved elsewhere on your device.</p><h3>3. Document scanning</h3><p>The document scanner is provided through Google Play services. Its scanning flow operates on-device and PicoPDF does not request broad camera permission. Google Play services may download scanner components, and only scans you approve are returned to PicoPDF.</p><h3>4. Advertising and consent</h3><p>PicoPDF uses Google AdMob and Google&#x27;s User Messaging Platform (UMP) to display ads and manage privacy choices. Depending on your region and choices, Google and its advertising partners may collect or share:</p><ul><li>IP address, which may be used to estimate general location;</li><li>app interactions such as launches, taps, and ad views;</li><li>diagnostic and performance information; and</li><li>device identifiers, including the Android advertising ID or app set ID.</li></ul><p>These data may be used for advertising, analytics, and fraud prevention. Where required, UMP asks for your choices before ads are requested. You can review or withdraw eligible choices from <strong>Settings → Privacy choices</strong> in PicoPDF. Declining personalised ads does not necessarily remove all ads; limited or non-personalised ads may still be shown.</p><h3>5. Third-party services</h3><ul><li><a href="https://policies.google.com/privacy" target="_blank" rel="noreferrer">Google Privacy Policy<span class="external" aria-hidden="true">↗</span></a></li><li><a href="https://policies.google.com/technologies/ads" target="_blank" rel="noreferrer">How Google uses data in advertising<span class="external" aria-hidden="true">↗</span></a></li><li><a href="https://policies.google.com/privacy" target="_blank" rel="noreferrer">Google Play services privacy information<span class="external" aria-hidden="true">↗</span></a></li></ul><h3>6. Retention and deletion</h3><p>PicoPDF does not maintain a developer account or cloud document archive. Temporary processing files are kept only as needed for an operation. Local app history can be removed in PicoPDF, app data can be cleared in Android settings, and the app can be uninstalled. Files saved to shared device storage remain until you delete them with PicoPDF, Android&#x27;s file manager, or another app. Google retains information according to its own policies and your consent choices.</p><h3>7. Security</h3><p>PicoPDF limits file access to user-selected items, blocks cleartext network traffic, and processes PDF content locally. Network transfers performed by Google services are encrypted in transit. No method of storage or transmission can be guaranteed to be completely secure.</p><h3>8. Children</h3><p>PicoPDF is a general-purpose utility and is not directed specifically to children under 13. The app does not knowingly request names, email addresses, or account registration from children.</p><h3>9. Changes and contact</h3><p>This policy may be updated when PicoPDF&#x27;s features or service providers change. The effective date above will be revised. For privacy questions, use the developer contact method displayed on PicoPDF&#x27;s Google Play listing.</p></article></section><section class="policy policy--tr" id="turkce" lang="tr"><div class="section-heading"><span>TR</span><div><p>Türkçe</p><h2>PicoPDF Gizlilik Politikası</h2></div></div><article><h3>1. Kapsam</h3><p>Bu Gizlilik Politikası, PicoPDF Android uygulamasının (<code>com.mustafaoguzbaran.picopdf</code>) PDF sıkıştırma, birleştirme, ayırma, düzenleme, tarama ve oluşturma işlemlerinde bilgileri nasıl ele aldığını açıklar.</p><h3>2. Belgeleriniz ve fotoğraflarınız</h3><p>Seçtiğiniz dosyalar cihazınızda yerel olarak işlenir. PicoPDF; belge içeriklerini, fotoğrafları, dosya adlarını veya oluşturulan PDF&#x27;leri geliştirici tarafından işletilen bir sunucuya yüklemez. Uygulama Android sistem dosya seçicisini kullanır ve yalnızca sizin seçtiğiniz dosyalara erişir. Çıktılar yalnızca belirlediğiniz konuma kaydedilir.</p><p>PicoPDF kolaylık sağlamak amacıyla son sonuçların küçük bir listesini cihazda tutabilir. Bu liste uygulama içinden temizlenebilir. Bir sonucu listeden kaldırmak, cihazın başka bir konumuna kaydedilen PDF&#x27;yi otomatik olarak silmez.</p><h3>3. Belge tarama</h3><p>Belge tarayıcı Google Play hizmetleri üzerinden sağlanır. Tarama akışı cihazda çalışır ve PicoPDF geniş kapsamlı kamera izni istemez. Google Play hizmetleri tarayıcı bileşenlerini indirebilir; yalnızca onayladığınız taramalar PicoPDF&#x27;e aktarılır.</p><h3>4. Reklamlar ve rıza</h3><p>PicoPDF reklam göstermek ve gizlilik seçimlerini yönetmek için Google AdMob ile Google User Messaging Platform (UMP) kullanır. Bölgenize ve seçimlerinize bağlı olarak Google ve reklam iş ortakları şunları toplayabilir veya paylaşabilir:</p><ul><li>genel konumu tahmin etmek için kullanılabilen IP adresi;</li><li>uygulama açılışları, dokunuşlar ve reklam görüntülemeleri gibi etkileşimler;</li><li>tanılama ve performans bilgileri; ve</li><li>Android reklam kimliği veya app set ID gibi cihaz tanımlayıcıları.</li></ul><p>Bu veriler reklam, analiz ve dolandırıcılığı önleme amaçlarıyla kullanılabilir. Gerekli bölgelerde UMP, reklam isteğinden önce tercihlerinizi sorar. Uygun seçimleri PicoPDF içindeki <strong>Ayarlar → Gizlilik seçenekleri</strong> bölümünden inceleyebilir veya geri çekebilirsiniz. Kişiselleştirilmiş reklamı reddetmek tüm reklamları kaldırmayabilir; sınırlı ya da kişiselleştirilmemiş reklamlar gösterilebilir.</p><h3>5. Üçüncü taraf hizmetleri</h3><ul><li><a href="https://policies.google.com/privacy" target="_blank" rel="noreferrer">Google Gizlilik Politikası<span class="external" aria-hidden="true">↗</span></a></li><li><a href="https://policies.google.com/technologies/ads" target="_blank" rel="noreferrer">Google&#x27;ın reklam verilerini kullanımı<span class="external" aria-hidden="true">↗</span></a></li><li><a href="https://policies.google.com/privacy" target="_blank" rel="noreferrer">Google Play hizmetleri gizlilik bilgileri<span class="external" aria-hidden="true">↗</span></a></li></ul><h3>6. Saklama ve silme</h3><p>PicoPDF geliştirici hesabı veya bulut belge arşivi tutmaz. Geçici işlem dosyaları yalnızca işlem için gerektiği sürece saklanır. Yerel uygulama geçmişi PicoPDF içinden silinebilir; Android ayarlarından uygulama verileri temizlenebilir veya uygulama kaldırılabilir. Paylaşılan cihaz depolamasına kaydettiğiniz dosyalar, siz PicoPDF, Android dosya yöneticisi veya başka bir uygulamayla silene kadar kalır. Google, bilgileri kendi politikaları ve rıza seçimleriniz doğrultusunda saklar.</p><h3>7. Güvenlik</h3><p>PicoPDF dosya erişimini seçtiğiniz öğelerle sınırlar, şifresiz ağ trafiğini engeller ve PDF içeriğini yerel olarak işler. Google hizmetlerinin ağ aktarımları taşıma sırasında şifrelenir. Hiçbir saklama veya iletim yönteminin tamamen güvenli olduğu garanti edilemez.</p><h3>8. Çocuklar</h3><p>PicoPDF genel amaçlı bir yardımcı uygulamadır ve özellikle 13 yaşın altındaki çocuklara yönelik değildir. Uygulama çocuklardan bilerek ad, e-posta adresi veya hesap kaydı istemez.</p><h3>9. Değişiklikler ve iletişim</h3><p>PicoPDF özellikleri veya hizmet sağlayıcıları değiştiğinde bu politika güncellenebilir ve yukarıdaki yürürlük tarihi yenilenir. Gizlilik soruları için PicoPDF&#x27;in Google Play mağaza girişinde gösterilen geliştirici iletişim yöntemini kullanabilirsiniz.</p></article></section><footer><a class="brand brand--footer" href="#top"><div class="brand-mark" aria-hidden="true"><span class="brand-mark__fold"></span><span class="brand-mark__line brand-mark__line--short"></span><span class="brand-mark__line"></span></div><span><strong>PicoPDF</strong><small>Privacy Policy · Gizlilik Politikası</small></span></a><p>Local-first PDF tools for Android.</p></footer></main></body>
+</html>

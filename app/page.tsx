@@ -223,7 +223,7 @@ export default function Home() {
             Bu veriler reklam, analiz ve dolandırıcılığı önleme amaçlarıyla kullanılabilir.
             Gerekli bölgelerde UMP, reklam isteğinden önce tercihlerinizi sorar. Uygun
             seçimleri PicoPDF içindeki <strong>Ayarlar → Gizlilik seçenekleri</strong>
-            bölümünden inceleyebilir veya geri çekebilirsiniz. Kişiselleştirilmiş reklamı
+            {" "}bölümünden inceleyebilir veya geri çekebilirsiniz. Kişiselleştirilmiş reklamı
             reddetmek tüm reklamları kaldırmayabilir; sınırlı ya da kişiselleştirilmemiş
             reklamlar gösterilebilir.
           </p>
